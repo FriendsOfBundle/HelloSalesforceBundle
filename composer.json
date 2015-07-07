@@ -14,6 +14,9 @@
         "phpforce/soap-client": "*",
         "phpforce/common": "dev-master"
     },
+    "suggest": {
+        "guzzle/http": "For fetching the latest WSDL from Salesforce"
+    },
     "autoload": {
         "psr-4": {
             "Hgtan\\Bundle\\HelloSalesforceBundle\\": ""
