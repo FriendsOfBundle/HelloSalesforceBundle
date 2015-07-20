@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <!--
+    <services>
+        <service id="hgtan_hello_salesforce.example" class="Hgtan\Bundle\HelloSalesforceBundle\Example">
+            <argument type="service" id="service_id" />
+            <argument>plain_value</argument>
+            <argument>%parameter_name%</argument>
+        </service>
+    </services>
+    -->
+
+    <services>
+
+        <service id="phpforce.soap_client"
+                 class="Phpforce\SoapClient\Client"
+                 factory-service="phpforce.soap_client.builder"
+                 factory-method="build">
+        </service>
+
+        <service id="phpforce.soap_client.bulk_saver"
+                 class="Phpforce\SoapClient\BulkSaver">
+            <argument type="service" id="phpforce.soap_client" />
+        </service>
+
+        <service id="phpforce.soap_client.builder"
+                 class="Phpforce\SoapClient\ClientBuilder">
+            <argument>%phpforce.soap_client.wsdl%</argument>
+            <argument>%phpforce.soap_client.username%</argument>
+            <argument>%phpforce.soap_client.password%</argument>
+            <argument>%phpforce.soap_client.token%</argument>
+        </service>
+
+    </services>
+
+</container>
