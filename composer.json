@@ -2,6 +2,7 @@
     "name": "hgtan/salesforce-bundle",
     "type": "symfony-bundle",
     "description": "Hello Salesforce Bundle",
+    "keywords": [ "salesforce", "crm", "soap", "web services" ],
     "homepage": "http://hoangthienan.github.io",
     "license": "MIT",
     "authors": [
