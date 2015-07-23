@@ -10,7 +10,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/FriendsOfBundle/HelloSalesforceBundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/FriendsOfBundle/HelloSalesforceBundle)
 [![HHVM Status](https://img.shields.io/hhvm/hgtan/salesforce-bundle.svg?style=flat-square)](http://hhvm.h4cc.de/package/hgtan/salesforce-bundle)
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/046850bd-9b04-4086-aaa1-b834401b8e94/big.png)](https://insight.sensiolabs.com/projects/046850bd-9b04-4086-aaa1-b834401b8e94)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/56bfaeeb-6ea8-4bba-9b04-bf669c425277/big.png)](https://insight.sensiolabs.com/projects/56bfaeeb-6ea8-4bba-9b04-bf669c425277)
 
 Just a simple example bundle using Salesforce API from your Symfony2 project and the following PHPForce Soap Client:
 * [soap-client](https://github.com/phpforce/soap-client)
@@ -21,7 +21,7 @@ Installation
 ### Step 1: Using Composer
 
 composer.json
-```bash
+```
     php composer.phar require hgtan/salesforce-bundle:dev-master
 ```
 
